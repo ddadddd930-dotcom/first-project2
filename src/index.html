@@ -23,7 +23,6 @@
         }
         body{font-family:'Nunito',sans-serif;background:var(--bg);min-height:100vh;color:var(--text);overflow-x:hidden}
 
-        /* ── SCREENS ── */
         .screen{display:none;min-height:100vh;flex-direction:column;align-items:center;padding:20px 14px 60px;gap:16px}
         .screen.active{display:flex}
         #s-home,#s-lobby,#s-game,#s-results{
@@ -31,7 +30,6 @@
             radial-gradient(ellipse at 80% 80%,rgba(144,96,255,0.12),transparent 50%),var(--bg);
         }
 
-        /* ── LOGO ── */
         .logo{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:8px}
         .logo-ring{width:76px;height:76px;border-radius:22px;background:linear-gradient(135deg,var(--blue),var(--purple));
             display:flex;align-items:center;justify-content:center;font-size:2.2rem;
@@ -41,7 +39,6 @@
             background:linear-gradient(135deg,var(--bl),var(--pl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
         .logo-sub{font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--t3)}
 
-        /* ── HOME CARDS ── */
         .home-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:100%;max-width:640px}
         .hcard{border-radius:20px;padding:24px 20px;border:1.5px solid rgba(255,255,255,0.07);
             background:var(--bg2);cursor:pointer;transition:all 0.2s;
@@ -58,7 +55,6 @@
         .hcard.join .hcard-name{color:var(--pl)}
         .hcard-desc{font-size:0.7rem;color:var(--t2);line-height:1.4}
 
-        /* ── PANELS / FORMS ── */
         .panel{width:100%;max-width:640px;background:var(--bg2);border:1px solid rgba(255,255,255,0.07);
             border-radius:20px;padding:22px 22px;display:flex;flex-direction:column;gap:14px}
         .panel-title{font-family:'Unbounded',sans-serif;font-size:1rem;font-weight:700;
@@ -71,7 +67,6 @@
         .field-input::placeholder{color:var(--t3)}
         .field-row{display:flex;flex-direction:column;gap:6px}
 
-        /* grade / subject selectors (compact) */
         .compact-grades{display:flex;gap:5px;flex-wrap:wrap}
         .cg{width:36px;height:36px;border-radius:10px;border:1.5px solid rgba(255,255,255,0.07);
             background:var(--bg3);display:flex;align-items:center;justify-content:center;
@@ -86,7 +81,6 @@
         .cs-ico{font-size:1.2rem}.cs-name{font-size:0.52rem;font-weight:700;letter-spacing:0.5px;text-align:center;color:var(--t2)}
         .cs.sel .cs-name{color:var(--bl)}
 
-        /* mode chips */
         .mode-chips{display:flex;gap:7px;flex-wrap:wrap}
         .mc{padding:8px 14px;border-radius:10px;border:1.5px solid rgba(255,255,255,0.07);
             background:var(--bg3);cursor:pointer;font-size:0.7rem;font-weight:700;
@@ -94,7 +88,6 @@
         .mc:hover{border-color:rgba(255,255,255,0.18);color:var(--text)}
         .mc.sel{border-color:var(--cyan);background:rgba(0,200,232,0.12);color:var(--cyan)}
 
-        /* ── BUTTONS ── */
         .btn{padding:14px 0;border:none;border-radius:14px;font-family:'Unbounded',sans-serif;
             font-size:0.85rem;font-weight:700;letter-spacing:1px;cursor:pointer;
             width:100%;transition:transform 0.12s,box-shadow 0.2s;color:#fff}
@@ -109,7 +102,6 @@
         .btn-row{display:flex;gap:10px;width:100%;max-width:640px}
         .btn-row .btn{flex:1}
 
-        /* ── STATUS / ROOM CODE ── */
         .status-msg{width:100%;max-width:640px;padding:12px 18px;border-radius:12px;
             background:var(--bg2);border:1px solid rgba(255,255,255,0.06);
             font-size:0.78rem;font-weight:700;color:var(--t2);text-align:center;min-height:40px;
@@ -128,7 +120,6 @@
         .rcd-copy{font-size:0.65rem;color:var(--t3);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
         .rcd-copy:hover{color:var(--t2)}
 
-        /* ── LOBBY PLAYERS ── */
         .players-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;width:100%;max-width:640px}
         .player-card{border-radius:14px;padding:12px;background:var(--bg2);border:1px solid rgba(255,255,255,0.07);
             display:flex;flex-direction:column;align-items:center;gap:5px;position:relative}
@@ -141,23 +132,19 @@
         .player-ready{font-size:0.9rem;position:absolute;top:8px;right:8px}
         .waiting-count{font-size:0.72rem;color:var(--t3);font-weight:700;text-align:center}
 
-        /* lobby info strip */
         .lobby-info{display:flex;gap:8px;flex-wrap:wrap;width:100%;max-width:640px;justify-content:center}
         .li-chip{background:var(--bg2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;
             padding:5px 12px;font-size:0.65rem;font-weight:700;color:var(--t2);letter-spacing:0.5px}
         .li-chip span{color:var(--text);font-family:'Unbounded',sans-serif}
 
-        /* ── GAME SCREEN ── */
         .game-topbar{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:700px}
         .g-chip{background:var(--bg2);border:1px solid rgba(255,255,255,0.06);border-radius:8px;
             padding:5px 11px;font-size:0.62rem;font-weight:700;color:var(--t2)}
         .g-chip span{color:var(--text);font-family:'Unbounded',sans-serif}
 
-        /* timer */
         .timer-wrap{width:100%;max-width:700px;height:5px;background:rgba(255,255,255,0.05);border-radius:3px;overflow:hidden}
         .timer-bar{height:100%;border-radius:3px;transition:width 0.1s linear,background 0.3s}
 
-        /* leaderboard strip */
         .live-board{width:100%;max-width:700px;background:var(--bg2);border:1px solid rgba(255,255,255,0.06);
             border-radius:16px;padding:10px 14px;display:flex;gap:8px;overflow-x:auto;align-items:center}
         .lb-item{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:56px}
@@ -166,7 +153,6 @@
         .lb-score{font-family:'Unbounded',sans-serif;font-size:0.8rem;font-weight:900;color:var(--gl2)}
         .lb-item.me .lb-name{color:var(--bl)}.lb-item.me .lb-score{color:var(--gl)}
 
-        /* question card */
         .qcard{width:100%;max-width:700px;background:var(--bg2);border:1px solid rgba(255,255,255,0.07);
             border-radius:18px;padding:20px 22px;display:flex;flex-direction:column;align-items:center;gap:8px;
             position:relative;overflow:hidden}
@@ -182,7 +168,6 @@
             text-align:center;line-height:1.3;color:var(--gl2)}
         .q-num{font-size:0.65rem;color:var(--t3);font-weight:700}
 
-        /* choices */
         .choices{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%;max-width:700px}
         .cbtn{padding:14px 12px;border:1.5px solid rgba(255,255,255,0.1);border-radius:12px;
             background:rgba(255,255,255,0.04);color:var(--text);font-family:'Nunito',sans-serif;
@@ -194,7 +179,6 @@
         .cbtn.reveal-ok{border-color:var(--green);background:rgba(16,204,128,0.18);color:var(--gl)}
         .cbtn.reveal-fail{border-color:rgba(255,255,255,0.07);opacity:0.35}
 
-        /* reveal banner */
         .reveal-banner{
             width:100%;max-width:700px;border-radius:14px;padding:14px 18px;
             display:flex;align-items:center;gap:12px;
@@ -211,7 +195,6 @@
         .rb-explain{font-size:0.7rem;color:var(--t2);line-height:1.4}
         .rb-waiting{font-size:0.65rem;color:var(--t3);font-weight:700;letter-spacing:1px}
 
-        /* host next button */
         .host-next-btn{width:100%;max-width:700px;padding:14px;border:none;border-radius:14px;
             background:linear-gradient(135deg,var(--green),#08885A);color:#fff;
             font-family:'Unbounded',sans-serif;font-size:0.8rem;font-weight:700;letter-spacing:1px;
@@ -219,12 +202,10 @@
             box-shadow:0 6px 20px rgba(16,204,128,0.3);display:none}
         .host-next-btn:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(16,204,128,0.4)}
 
-        /* feedback */
         .fbbar{width:100%;max-width:700px;min-height:34px;display:flex;align-items:center;justify-content:center;
             background:var(--bg2);border:1px solid rgba(255,255,255,0.05);border-radius:12px;
             padding:8px 16px;font-size:0.75rem;font-weight:700;color:var(--t2);text-align:center}
 
-        /* ── RESULTS ── */
         .podium{display:flex;align-items:flex-end;justify-content:center;gap:10px;width:100%;max-width:640px;padding:10px 0}
         .pod-item{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;max-width:160px}
         .pod-place{font-family:'Unbounded',sans-serif;font-size:0.6rem;font-weight:700;letter-spacing:2px;
@@ -249,14 +230,12 @@
         .fb-sc{font-family:'Unbounded',sans-serif;font-size:0.9rem;font-weight:900;color:var(--gl2)}
         .fb-row.me{border-color:var(--blue);background:rgba(64,112,255,0.07)}
 
-        /* ── LOADING ── */
         .loading{display:flex;flex-direction:column;align-items:center;gap:12px;padding:40px}
         .spinner{width:44px;height:44px;border:3px solid rgba(255,255,255,0.1);border-top-color:var(--blue);
             border-radius:50%;animation:spin 0.8s linear infinite}
         @keyframes spin{to{transform:rotate(360deg)}}
         .loading-text{font-size:0.8rem;color:var(--t2);font-weight:700;letter-spacing:1px}
 
-        /* ── MISC ── */
         @keyframes wd{0%,100%{opacity:0.2}50%{opacity:1}}
         .wd{display:inline-block;animation:wd 1s ease infinite}
         .wd:nth-child(2){animation-delay:0.2s}.wd:nth-child(3){animation-delay:0.4s}
@@ -264,7 +243,6 @@
         .section-lbl{font-size:0.58rem;letter-spacing:3px;text-transform:uppercase;color:var(--t3);font-weight:700;width:100%;max-width:640px}
         .answer-count{font-size:0.7rem;color:var(--t3);font-weight:700;text-align:center;letter-spacing:1px}
 
-        /* player count badge */
         .player-count-badge{
             display:inline-flex;align-items:center;gap:5px;
             background:rgba(64,112,255,0.1);border:1px solid rgba(64,112,255,0.2);
@@ -276,7 +254,7 @@
 </head>
 <body>
 
-<!-- ══ HOME ══ -->
+<!-- HOME -->
 <div class="screen active" id="s-home">
     <div class="logo">
         <div class="logo-ring">🌐</div>
@@ -297,25 +275,20 @@
         </div>
     </div>
 
-    <!-- HOST SETUP -->
     <div class="panel" id="host-setup" style="display:none">
         <div class="panel-title">⚙️ Настройки игры</div>
-
         <div class="field-row">
             <div class="field-label">Твоё имя</div>
             <input class="field-input" id="host-name" placeholder="Например: Учитель" maxlength="20"/>
         </div>
-
         <div class="field-row">
             <div class="field-label">Класс</div>
             <div class="compact-grades" id="host-grades"></div>
         </div>
-
         <div class="field-row">
             <div class="field-label">Предмет</div>
             <div class="compact-subjects" id="host-subjects"></div>
         </div>
-
         <div class="field-row">
             <div class="field-label">Режим</div>
             <div class="mode-chips">
@@ -324,7 +297,6 @@
                 <div class="mc" data-gm="survival" onclick="selGM(this)">💀 Выживание (3 жизни)</div>
             </div>
         </div>
-
         <div class="field-row">
             <div class="field-label">Кол-во вопросов</div>
             <div class="mode-chips">
@@ -333,11 +305,9 @@
                 <div class="mc" data-qc="20" onclick="selQC(this)">20</div>
             </div>
         </div>
-
         <button class="btn primary" onclick="createRoom()">🚀 Создать комнату</button>
     </div>
 
-    <!-- JOIN -->
     <div class="panel" id="join-panel" style="display:none">
         <div class="panel-title">🎮 Войти в игру</div>
         <div class="field-row">
@@ -355,24 +325,20 @@
     <div class="status-msg" id="home-status" style="display:none"></div>
 </div>
 
-<!-- ══ LOBBY ══ -->
+<!-- LOBBY -->
 <div class="screen" id="s-lobby">
     <div style="display:flex;align-items:center;gap:10px;width:100%;max-width:640px;justify-content:space-between">
         <div style="font-family:'Unbounded',sans-serif;font-size:1rem;font-weight:700;color:var(--bl)">🎯 Лобби</div>
         <div class="player-count-badge"><div class="pcb-dot"></div><span id="lobby-count">0 игроков</span></div>
     </div>
-
     <div class="room-code-display">
         <div class="rcd-label">Код комнаты</div>
         <div class="rcd-code" id="lobby-code">—</div>
         <div class="rcd-copy" onclick="copyCode()">📋 Нажми чтобы скопировать</div>
     </div>
-
     <div class="lobby-info" id="lobby-info"></div>
-
     <div class="section-lbl">👥 Игроки</div>
     <div class="players-grid" id="players-grid"></div>
-
     <div class="btn-row">
         <button class="btn ghost" onclick="leaveRoom()">← Выйти</button>
         <button class="btn green" id="start-btn" onclick="startGame()" style="display:none">▶ Начать игру!</button>
@@ -380,7 +346,7 @@
     <div class="status-msg" id="lobby-status" style="display:none"></div>
 </div>
 
-<!-- ══ GAME ══ -->
+<!-- GAME -->
 <div class="screen" id="s-game">
     <div class="game-topbar">
         <div style="font-family:'Unbounded',sans-serif;font-size:0.8rem;font-weight:700;color:var(--pl)">⚔️ МатБой Online</div>
@@ -389,15 +355,10 @@
             <div class="g-chip" id="gc-s">Счёт <span>—</span></div>
         </div>
     </div>
-
     <div class="timer-wrap" id="g-timer-wrap" style="display:none">
         <div class="timer-bar" id="g-timer-bar" style="width:100%;background:var(--green)"></div>
     </div>
-
-    <!-- Live leaderboard -->
     <div class="live-board" id="live-board"></div>
-
-    <!-- Question -->
     <div class="qcard">
         <div class="qmeta">
             <span class="qbadge" id="g-diff">—</span>
@@ -405,14 +366,8 @@
         </div>
         <div class="q-text" id="g-text">...</div>
     </div>
-
-    <!-- Choices -->
     <div class="choices" id="g-choices"></div>
-
-    <!-- Answer count -->
     <div class="answer-count" id="answer-count"></div>
-
-    <!-- Reveal -->
     <div class="reveal-banner" id="g-reveal">
         <div class="rb-ico" id="g-rb-ico">✅</div>
         <div class="rb-body">
@@ -422,14 +377,11 @@
             <div class="rb-waiting" id="g-rb-waiting"></div>
         </div>
     </div>
-
-    <!-- Host only: next question button -->
     <button class="host-next-btn" id="host-next-btn" onclick="hostNextQuestion()">➡ Следующий вопрос</button>
-
     <div class="fbbar" id="g-fb">Выбери ответ!</div>
 </div>
 
-<!-- ══ RESULTS ══ -->
+<!-- RESULTS -->
 <div class="screen" id="s-results">
     <div style="font-family:'Unbounded',sans-serif;font-size:1.5rem;font-weight:900;text-align:center;
     background:linear-gradient(135deg,var(--gold),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
@@ -446,19 +398,19 @@
 
 <script>
     // ══════════════════════════════════════════════
-    // FIREBASE CONFIG (демо-проект, можно заменить)
+    // FIREBASE CONFIG
     // ══════════════════════════════════════════════
     const firebaseConfig = {
-        apiKey: "AIzaSyDemo-replace-with-your-key",
-        authDomain: "matboy-demo.firebaseapp.com",
-        databaseURL: "https://matboy-demo-default-rtdb.firebaseio.com",
-        projectId: "matboy-demo",
-        storageBucket: "matboy-demo.appspot.com",
-        messagingSenderId: "123456789",
-        appId: "1:123456789:web:abcdef"
+        apiKey: "AIzaSyDrK2z-8bpesiwhNkL2yVx7xiXCMPMFDRI",
+        authDomain: "matwars-41d2b.firebaseapp.com",
+        databaseURL: "https://matwars-41d2b-default-rtdb.firebaseio.com",
+        projectId: "matwars-41d2b",
+        storageBucket: "matwars-41d2b.firebasestorage.app",
+        messagingSenderId: "746107070673",
+        appId: "1:746107070673:web:c35c4c60295966c830bdf0",
+        measurementId: "G-3VPSXJ6NEJ"
     };
 
-    // ══ USE DEMO FIREBASE OR FALLBACK TO LOCAL SIMULATION ══
     let db = null;
     let USE_FIREBASE = false;
 
@@ -466,8 +418,9 @@
         firebase.initializeApp(firebaseConfig);
         db = firebase.database();
         USE_FIREBASE = true;
+        console.log('✅ Firebase подключён!');
     } catch(e) {
-        console.log('Firebase not configured, using local simulation');
+        console.log('Firebase не настроен, используется локальная симуляция', e);
     }
 
     // ══════════════════════════════════════════════
@@ -558,13 +511,10 @@
 
         const bank = banks[subject];
         if (!bank) return null;
-
         if (Array.isArray(bank)) {
             const q = bank[rnd(0, bank.length-1)];
             return makeQ(q);
         }
-
-        // math — grade-based
         const pool = grade <= 4 ? bank.easy : grade <= 7 ? bank.mid : bank.hard;
         const gen = pool[rnd(0, pool.length-1)];
         const raw = gen();
@@ -572,7 +522,6 @@
     }
 
     function makeQ(q) {
-        // already has opts
         if (q.opts) return {t:q.t, opts:q.opts, c:q.c, topic:q.topic, diff:q.diff, ex:q.ex};
         return null;
     }
@@ -600,7 +549,6 @@
     let roomRef = null;
     let playersRef = null;
     let gameRef = null;
-    let listeners = [];
 
     let selGrade = 5, selSubject = 'math', selGameMode = 'classic', selQCount = 10;
     let myScore = 0, myLives = 3, answered = false;
@@ -613,7 +561,6 @@
     // BUILD MENU CONTROLS
     // ══════════════════════════════════════════════
     (function buildMenu() {
-        // grades
         const gg = document.getElementById('host-grades');
         for(let i=1;i<=11;i++) {
             const b = document.createElement('div');
@@ -622,7 +569,6 @@
             b.onclick = () => { document.querySelectorAll('.cg').forEach(x=>x.classList.remove('sel')); b.classList.add('sel'); selGrade=i; };
             gg.appendChild(b);
         }
-        // subjects
         const sg = document.getElementById('host-subjects');
         Object.entries(SUBJECTS).forEach(([key,s],i) => {
             const b = document.createElement('div');
@@ -636,9 +582,6 @@
     function selGM(el){document.querySelectorAll('[data-gm]').forEach(b=>b.classList.remove('sel'));el.classList.add('sel');selGameMode=el.dataset.gm;}
     function selQC(el){document.querySelectorAll('[data-qc]').forEach(b=>b.classList.remove('sel'));el.classList.add('sel');selQCount=parseInt(el.dataset.qc);}
 
-    // ══════════════════════════════════════════════
-    // SHOW/HIDE HOME PANELS
-    // ══════════════════════════════════════════════
     function showHostSetup(){
         document.getElementById('host-setup').style.display = 'flex';
         document.getElementById('join-panel').style.display = 'none';
@@ -651,7 +594,7 @@
     }
 
     // ══════════════════════════════════════════════
-    // ROOM CREATION (Firebase OR local mock)
+    // ROOM CREATION
     // ══════════════════════════════════════════════
     function generateCode(){return String(rnd(1000,9999));}
 
@@ -667,7 +610,7 @@
             subject: selSubject,
             gameMode: selGameMode,
             qCount: selQCount,
-            status: 'lobby', // lobby | playing | results
+            status: 'lobby',
             currentQ: null,
             currentQIndex: 0,
             createdAt: Date.now(),
@@ -681,7 +624,6 @@
             await joinAsPlayer();
             subscribeRoom();
         } else {
-            // LOCAL SIMULATION
             LocalDB.set(roomCode, roomData);
             LocalDB.setPlayer(roomCode, myId, {name:myName, avatar:myAvatar, score:0, lives:3, answeredIndex:-1});
             gotoLobby();
@@ -718,7 +660,6 @@
     async function joinAsPlayer() {
         const playerData = { name: myName, avatar: myAvatar, score: 0, lives: 3, answeredIndex: -1, joinedAt: Date.now() };
         await db.ref('rooms/' + roomCode + '/players/' + myId).set(playerData);
-        // cleanup on disconnect
         db.ref('rooms/' + roomCode + '/players/' + myId).onDisconnect().remove();
     }
 
@@ -726,8 +667,7 @@
     // FIREBASE SUBSCRIPTIONS
     // ══════════════════════════════════════════════
     function subscribeRoom() {
-        // players
-        const pListener = db.ref('rooms/' + roomCode + '/players').on('value', snap => {
+        db.ref('rooms/' + roomCode + '/players').on('value', snap => {
             const players = snap.val() || {};
             updateLobbyPlayers(players);
             if (document.getElementById('s-game').classList.contains('active')) {
@@ -735,38 +675,39 @@
             }
         });
 
-        // room status
-        const rListener = db.ref('rooms/' + roomCode + '/status').on('value', snap => {
+        db.ref('rooms/' + roomCode + '/status').on('value', snap => {
             const status = snap.val();
             if (status === 'playing' && !document.getElementById('s-game').classList.contains('active')) {
-                gotoGame();
+                // get game settings from room
+                db.ref('rooms/' + roomCode).once('value').then(s => {
+                    const r = s.val();
+                    selGameMode = r.gameMode || selGameMode;
+                    selQCount = r.qCount || selQCount;
+                    selGrade = r.grade || selGrade;
+                    selSubject = r.subject || selSubject;
+                    gotoGame();
+                });
             } else if (status === 'results') {
                 gotoResults();
             }
         });
 
-        // current question
-        const qListener = db.ref('rooms/' + roomCode + '/currentQ').on('value', snap => {
+        db.ref('rooms/' + roomCode + '/currentQ').on('value', snap => {
             const q = snap.val();
             if (q && document.getElementById('s-game').classList.contains('active')) {
                 renderQuestion(q);
             }
         });
 
-        // answer count
-        const acListener = db.ref('rooms/' + roomCode + '/players').on('value', snap => {
-            if (!currentQ) return;
-            const players = snap.val() || {};
-            const total = Object.keys(players).length;
-            const answered = Object.values(players).filter(p => p.answeredIndex === currentQIndex).length;
-            document.getElementById('answer-count').textContent = `${answered} / ${total} ответили`;
+        db.ref('rooms/' + roomCode + '/currentQIndex').on('value', snap => {
+            currentQIndex = snap.val() || 0;
         });
 
         gotoLobby();
     }
 
     // ══════════════════════════════════════════════
-    // LOCAL DB SIMULATION (when Firebase not configured)
+    // LOCAL DB SIMULATION
     // ══════════════════════════════════════════════
     const LocalDB = {
         _rooms: {},
@@ -809,7 +750,6 @@
         document.getElementById('host-next-btn').style.display = 'none';
 
         if (!USE_FIREBASE) {
-            // local single-device mode
             loadNextQuestionLocal();
         }
     }
@@ -818,8 +758,13 @@
         clearTimer();
         showScreen('s-results');
         document.getElementById('play-again-btn').style.display = isHost ? 'block' : 'none';
-        const players = USE_FIREBASE ? {} : LocalDB.getPlayers(roomCode);
-        renderResults(players);
+        if (USE_FIREBASE) {
+            db.ref('rooms/' + roomCode + '/players').once('value').then(snap => {
+                renderResults(snap.val() || {});
+            });
+        } else {
+            renderResults(LocalDB.getPlayers(roomCode));
+        }
     }
 
     function leaveRoom() {
@@ -836,14 +781,16 @@
     // LOBBY UI
     // ══════════════════════════════════════════════
     function updateLobbyInfo() {
-        const room = USE_FIREBASE ? {grade:selGrade,subject:selSubject,gameMode:selGameMode,qCount:selQCount} : (LocalDB.get(roomCode)||{});
+        const room = USE_FIREBASE
+            ? {grade:selGrade,subject:selSubject,gameMode:selGameMode,qCount:selQCount}
+            : (LocalDB.get(roomCode)||{});
         const el = document.getElementById('lobby-info');
         el.innerHTML = `
-    <div class="li-chip">Класс <span>${room.grade||selGrade}</span></div>
-    <div class="li-chip">Предмет <span>${SUBJECTS[room.subject||selSubject]?.name||'—'}</span></div>
-    <div class="li-chip">Режим <span>${{classic:'Классика',speed:'Скорость',survival:'Выживание'}[room.gameMode||selGameMode]}</span></div>
-    <div class="li-chip">Вопросов <span>${room.qCount||selQCount}</span></div>
-  `;
+            <div class="li-chip">Класс <span>${room.grade||selGrade}</span></div>
+            <div class="li-chip">Предмет <span>${SUBJECTS[room.subject||selSubject]?.name||'—'}</span></div>
+            <div class="li-chip">Режим <span>${{classic:'Классика',speed:'Скорость',survival:'Выживание'}[room.gameMode||selGameMode]}</span></div>
+            <div class="li-chip">Вопросов <span>${room.qCount||selQCount}</span></div>
+        `;
     }
 
     function updateLobbyPlayers(players) {
@@ -853,14 +800,13 @@
         grid.innerHTML = '';
         arr.forEach(([id, p]) => {
             const isMe = id === myId;
-            const isH = id === (USE_FIREBASE ? '' : myId); // simplified
             const card = document.createElement('div');
             card.className = 'player-card' + (isMe?' host-card':'');
             card.innerHTML = `
-      <div class="player-avatar">${p.avatar||'🎮'}</div>
-      <div class="player-name">${p.name||'?'}${isMe?' (ты)':''}</div>
-      ${isHost&&isMe?'<div class="player-host-badge">HOST</div>':''}
-    `;
+                <div class="player-avatar">${p.avatar||'🎮'}</div>
+                <div class="player-name">${p.name||'?'}${isMe?' (ты)':''}</div>
+                ${isHost&&isMe?'<div class="player-host-badge">HOST</div>':''}
+            `;
             grid.appendChild(card);
         });
     }
@@ -875,7 +821,7 @@
     }
 
     // ══════════════════════════════════════════════
-    // START GAME (host only)
+    // START GAME
     // ══════════════════════════════════════════════
     async function startGame() {
         if (!isHost) return;
@@ -892,7 +838,9 @@
     }
 
     function buildQuestion() {
-        const room = USE_FIREBASE ? {grade:selGrade,subject:selSubject} : (LocalDB.get(roomCode)||{grade:selGrade,subject:selSubject});
+        const room = USE_FIREBASE
+            ? {grade:selGrade,subject:selSubject}
+            : (LocalDB.get(roomCode)||{grade:selGrade,subject:selSubject});
         return getQuestion(room.subject||selSubject, room.grade||selGrade);
     }
 
@@ -916,7 +864,6 @@
         document.getElementById('g-fb').textContent = '⏱ Выбери ответ!';
         document.getElementById('g-fb').style.color = '';
 
-        // Build choices
         const grid = document.getElementById('g-choices');
         grid.innerHTML = '';
         (q.opts||[]).forEach(opt => {
@@ -939,7 +886,6 @@
         clearTimer();
         const ok = String(val) === String(currentQ.c);
 
-        // Disable all buttons
         document.querySelectorAll('#g-choices .cbtn').forEach(b => {
             b.disabled = true;
             if (String(b.dataset.val) === String(currentQ.c)) b.classList.add('reveal-ok');
@@ -954,7 +900,6 @@
 
         document.getElementById('gc-s').querySelector('span').textContent = myScore;
 
-        // Save answer to Firebase/local
         if (USE_FIREBASE) {
             db.ref('rooms/' + roomCode + '/players/' + myId).update({
                 score: myScore, lives: myLives, answeredIndex: currentQIndex
@@ -966,7 +911,6 @@
 
         revealAnswer(ok, currentQ);
 
-        // Host auto-advances in local mode after delay
         if (!USE_FIREBASE && isHost) {
             setTimeout(() => {
                 if (!gameOver()) loadNextQuestionLocal();
@@ -991,7 +935,6 @@
                 currentQIndex + 1 >= selQCount ? '🏁 Завершить игру' : '➡ Следующий вопрос';
         }
 
-        // Survival: check lives
         if (selGameMode === 'survival' && myLives <= 0) {
             document.getElementById('g-fb').textContent = '💀 Вы выбыли!';
             document.getElementById('g-fb').style.color = 'var(--rl)';
@@ -1061,7 +1004,6 @@
             .map(([id,p])=>({id,...p}))
             .sort((a,b)=>b.score-a.score);
 
-        // Podium (top 3)
         const podium = document.getElementById('podium');
         podium.innerHTML = '';
         const podOrder = arr.length >= 2 ? [arr[1],arr[0],arr[2]].filter(Boolean) : arr;
@@ -1072,17 +1014,16 @@
             div.className = 'pod-item';
             const isMe = p.id === myId;
             div.innerHTML = `
-      <div class="pod-place">${places[i]}</div>
-      <div class="pod-avatar">${medals[i]}</div>
-      <div class="pod-avatar" style="font-size:1.5rem">${p.avatar||'🎮'}</div>
-      <div class="pod-name" style="${isMe?'color:var(--bl)':''}">${p.name||'?'}${isMe?' (ты)':''}</div>
-      <div class="pod-score">${p.score||0}</div>
-      <div class="pod-bar"></div>
-    `;
+                <div class="pod-place">${places[i]}</div>
+                <div class="pod-avatar">${medals[i]}</div>
+                <div class="pod-avatar" style="font-size:1.5rem">${p.avatar||'🎮'}</div>
+                <div class="pod-name" style="${isMe?'color:var(--bl)':''}">${p.name||'?'}${isMe?' (ты)':''}</div>
+                <div class="pod-score">${p.score||0}</div>
+                <div class="pod-bar"></div>
+            `;
             podium.appendChild(div);
         });
 
-        // Full board
         const board = document.getElementById('full-board');
         board.innerHTML = '';
         arr.forEach((p,i) => {
@@ -1090,11 +1031,11 @@
             const row = document.createElement('div');
             row.className = 'fb-row' + (isMe?' me':'');
             row.innerHTML = `
-      <div class="fb-rank">${i+1}</div>
-      <div class="fb-avatar">${p.avatar||'🎮'}</div>
-      <div class="fb-name">${p.name||'?'}${isMe?' 👈':''}</div>
-      <div class="fb-sc">${p.score||0} очк.</div>
-    `;
+                <div class="fb-rank">${i+1}</div>
+                <div class="fb-avatar">${p.avatar||'🎮'}</div>
+                <div class="fb-name">${p.name||'?'}${isMe?' 👈':''}</div>
+                <div class="fb-sc">${p.score||0} очк.</div>
+            `;
             board.appendChild(row);
         });
     }
@@ -1103,7 +1044,6 @@
         if (!isHost) return;
         if (USE_FIREBASE) {
             await roomRef.update({status:'lobby', currentQ:null, currentQIndex:0});
-            // Reset all players' scores
             const snap = await playersRef.once('value');
             const players = snap.val() || {};
             const updates = {};
@@ -1150,34 +1090,9 @@
         el.textContent = msg; el.className = 'status-msg ' + type; el.style.display = 'flex';
     }
 
-    // keyboard for join code
     document.getElementById('join-code').addEventListener('keydown', e=>{if(e.key==='Enter')joinRoom();});
     document.getElementById('join-name').addEventListener('keydown', e=>{if(e.key==='Enter')joinRoom();});
     document.getElementById('host-name').addEventListener('keydown', e=>{if(e.key==='Enter')createRoom();});
-</script>
-
-<!-- SETUP GUIDE overlay (shown when Firebase not configured) -->
-<script>
-    // Show Firebase setup info on first load
-    window.addEventListener('load', () => {
-        if (!USE_FIREBASE) {
-            setTimeout(()=>{
-                const banner = document.createElement('div');
-                banner.style.cssText = `position:fixed;bottom:0;left:0;right:0;background:rgba(64,112,255,0.95);
-        backdrop-filter:blur(10px);padding:14px 20px;display:flex;align-items:center;gap:12px;z-index:999;
-        font-family:'Nunito',sans-serif;font-size:0.75rem;font-weight:700;border-top:1px solid rgba(255,255,255,0.15)`;
-                banner.innerHTML = `
-        <span style="font-size:1.2rem">🔧</span>
-        <div style="flex:1;line-height:1.4">
-          <div style="color:#fff;font-family:'Unbounded',sans-serif;font-size:0.7rem">Режим демо (без Firebase)</div>
-          <div style="color:rgba(255,255,255,0.7)">Для реального мультиплеера создай бесплатный проект на <b>firebase.google.com</b> и вставь свои ключи в код</div>
-        </div>
-        <button onclick="this.parentElement.remove()" style="background:rgba(255,255,255,0.2);border:none;border-radius:8px;padding:6px 12px;color:#fff;cursor:pointer;font-family:'Unbounded',sans-serif;font-size:0.65rem;font-weight:700">ОК</button>
-      `;
-                document.body.appendChild(banner);
-            }, 500);
-        }
-    });
 </script>
 </body>
 </html>
